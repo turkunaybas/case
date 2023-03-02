@@ -1,0 +1,52 @@
+#calc-input {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  color: #000;
+  font-size: 14px;
+  padding: 12px;
+  outline: 0;
+  background-color: #fff;
+}
+
+#calc-output {
+  color: #000;
+  font-size: 16px;
+  min-width: 60px;
+  line-height: 40px;
+  padding: 0 8px;
+  text-align: center;
+  background-color: #c4c4c4;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-sizing: border-box;
+  border-color: brown;
+}
+.container:focus-within {
+  border: 2px solid blue;
+}
+.calc-input-container:focus-within .result {
+  border-color: blue;
+}
+.container {
+  border: 1px solid #ccc; /* varsayılan çerçeve rengi */
+}
+
+.container:focus-within {
+  border: 2px solid blue; /* focuslu olduğunda çerçeve rengi */
+}
+
+.container.invalid {
+  border: 2px solid pink; /* geçersiz olduğunda çerçeve rengi */
+}
+
+.container:focus-within.invalid {
+  border: 2px solid red; /* focuslu ve geçersiz olduğunda çerçeve rengi */
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CalcInput Example</title>
+  </head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="calcinput.css" />
+    <script src="CalcInput.js"></script>
+  </head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="calcinput.css" />
+  </head>
+  <body>
+    <!-- This script creates an instance of the CalcInput class and assigns it to the calcInput variable. The CalcInput class takes one argument, which is a reference to an HTML element that will contain the input field and output display. In this case, the document.getElementById("calcInput") method is used to obtain a reference to the HTML element with the ID calcInput.
+
+Once the CalcInput instance is created, it is attached to the parent element and the input and output elements are created and appended to the parent. The onKeyUp, onFocus, and onBlur event listeners are also added to the input element.
+
+Overall, this code creates a calculator input field that validates and evaluates mathematical expressions in real-time as the user types. -->
+    <div id="calcInput"></div>
+
+    <script type="text/javascript">
+      let calcInput = new CalcInput(document.getElementById("calcInput"));
+    </script>
+  </body>
+</html>
